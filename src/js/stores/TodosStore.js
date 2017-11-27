@@ -29,7 +29,7 @@ class TodosStore extends EventEmitter {
     }
 
     create(header, description) {
-        const id = todo + Date.now().toString();
+        const id = 'todo_' + Date.now().toString();
         this.todos.push({id, header, description, completed: false});
         this.emit('change');
     }

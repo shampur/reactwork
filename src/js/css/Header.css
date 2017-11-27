@@ -1,0 +1,24 @@
+.header .top-bar {
+    background-color: black;
+}
+
+.header .top-bar .menu {
+    background-color: black;
+}
+
+.header .top-bar .menu li a {
+    color: #36b8f9;
+}
+
+.header .menu-text span {
+    font-weight: 300;
+    font-size: 1.3em;
+    top: -.16em !important;
+    position: relative;
+    color: white;
+}
+
+.header .menu-text span i {
+    margin-right: 10px;
+}
+

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../css/Header.css';
+
 export default class Header extends React.Component {
 
     constructor() {
@@ -18,11 +20,11 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <div class="header">
+            <div class="header" style={addBottomMargin}>
                 <div class="top-bar" id="responsive-menu">
                     <div class="top-bar-left">
                         <ul class="menu" data-dropdown-menu>
-                            <li class="menu-text">{this.state.title}</li>
+                            <li class="menu-text"><span><i class="fi-cloud"></i>{this.state.title}</span></li>
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
@@ -43,4 +45,8 @@ export default class Header extends React.Component {
             </div>
         );
     }
+}
+
+const addBottomMargin = {
+    marginBottom: '1.5em'
 }
